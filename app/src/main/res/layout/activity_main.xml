@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI calculator"
+        android:textAlignment="center"
+        android:fontFamily="Rockwell"
+        android:layout_margin="22dp"
+        android:textSize="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="22dp">
+
+        <TextView
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="Your Height :"
+            android:textSize="22dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:id="@+id/Et_Height"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:hint="height"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(centimeters)"
+        android:gravity="right"
+        android:textSize="22dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="22dp">
+
+        <TextView
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="Your Weight :"
+            android:textSize="22dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:id="@+id/Et_Weight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:hint="weight"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(kilograms)"
+        android:gravity="right"
+        android:textSize="22dp"
+        />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compute BMI"
+        android:layout_margin="32dp"
+        android:textColor="#FFF"
+        android:background="@android:color/holo_red_light"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Your BMI :"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/Tv_Output"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:text="NULL"/>
+    </LinearLayout>
+
+</LinearLayout>
